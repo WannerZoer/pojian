@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="32" height="32" fill="#1B2B4C" rx="0"/>
+    <!-- Wings -->
+    <path d="M8 16C12 12 14 8 16 8C18 8 20 12 24 16C20 20 18 24 16 24C14 24 12 20 8 16Z" stroke="white" stroke-width="1.5" fill="none"/>
+    <!-- Body -->
+    <line x1="16" y1="8" x2="16" y2="24" stroke="white" stroke-width="1.5"/>
+    <!-- Antennae -->
+    <path d="M14 8C13 6 13 4 14 3" stroke="white" stroke-width="1"/>
+    <path d="M18 8C19 6 19 4 18 3" stroke="white" stroke-width="1"/>
+</svg>

@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sidebar-container {
+    @apply h-full bg-gray-50 dark:bg-dark-secondary border-r 
+    dark:border-dark-border p-4 flex flex-col overflow-hidden;
+  }
+
+  .sidebar-header {
+    @apply flex items-center space-x-3 mb-6 flex-shrink-0;
+  }
+
+  .sidebar-icon-grid {
+    @apply grid grid-cols-6 gap-1 mb-6 flex-shrink-0;
+  }
+
+  .sidebar-icon-button {
+    @apply relative flex flex-col items-center cursor-pointer;
+  }
+
+  .sidebar-icon {
+    @apply w-8 h-8 flex items-center justify-center rounded hover:bg-gray-200 dark:hover:bg-dark-hover;
+  }
+
+  .sidebar-icon-active {
+    @apply bg-gray-200 dark:bg-dark-hover;
+  }
+
+  .sidebar-container-title {
+    @apply text-sm font-medium text-gray-600 dark:text-gray-400 mb-2 flex-shrink-0;
+  }
+
+  .sidebar-container-list {
+    @apply space-y-1 overflow-y-auto overflow-x-hidden flex-grow min-h-0;
+  }
+
+  .sidebar-container-item {
+    @apply relative flex items-center p-2 rounded cursor-pointer 
+    hover:bg-gray-200 dark:hover:bg-dark-hover min-w-0 pr-8;
+  }
+
+  .sidebar-container-item-active {
+    @apply bg-gray-200 dark:bg-dark-hover;
+  }
+
+  .sidebar-container-item-icon {
+    @apply flex-shrink-0 mr-2;
+  }
+
+  .sidebar-container-item-text {
+    @apply text-sm truncate flex-1 min-w-0 dark:text-white;
+  }
+
+  .sidebar-container-item-badge {
+    @apply flex-shrink-0 absolute right-2;
+  }
+
+  .panel-resize-handle {
+    @apply w-1 hover:w-2 bg-gray-200 dark:bg-dark-border hover:bg-primary-light 
+    dark:hover:bg-primary-dark transition-all cursor-col-resize;
+  }
+
+  /* Authentication pages styles */
+  .auth-input {
+    @apply mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm 
+    focus:outline-none focus:ring-primary-light focus:border-primary-light dark:bg-gray-800 
+    dark:border-gray-600 dark:text-white dark:focus:ring-primary-dark dark:focus:border-primary-dark;
+  }
+
+  .auth-button {
+    @apply w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm 
+    text-sm font-medium text-white bg-primary-light hover:bg-primary-light/90 
+    focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-light 
+    dark:bg-primary-dark dark:hover:bg-primary-dark/90 dark:focus:ring-primary-dark;
+  }
+
+  .auth-link {
+    @apply text-sm text-primary-light hover:text-primary-light/90 
+    dark:text-primary-dark dark:hover:text-primary-dark/90;
+  }
+
+  .auth-container {
+    @apply min-h-screen flex items-center justify-center bg-gray-50 
+    dark:bg-gray-900 px-4 sm:px-6 lg:px-8;
+  }
+
+  .auth-form-container {
+    @apply max-w-md w-full space-y-8 bg-white dark:bg-gray-800 
+    p-8 rounded-lg shadow-md;
+  }
+
+  .auth-title {
+    @apply mt-6 text-center text-3xl font-extrabold text-gray-900 
+    dark:text-white;
+  }
+
+  .auth-subtitle {
+    @apply mt-2 text-center text-sm text-gray-600 dark:text-gray-400;
+  }
+
+  .auth-error {
+    @apply mt-2 text-sm text-red-600 dark:text-red-400;
+  }
+
+  .auth-success {
+    @apply mt-2 text-sm text-green-600 dark:text-green-400;
+  }
+
+  .auth-divider {
+    @apply mt-6 relative;
+  }
+
+  .auth-divider-line {
+    @apply absolute top-1/2 w-full border-t border-gray-300 dark:border-gray-600;
+  }
+
+  .auth-divider-text {
+    @apply relative px-2 text-sm text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800;
+  }
+}
